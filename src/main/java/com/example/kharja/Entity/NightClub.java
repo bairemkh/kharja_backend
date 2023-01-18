@@ -1,10 +1,8 @@
-package com.example.kharjabackend.Models;
+package com.example.kharja.Entity;
 
-import com.example.kharjabackend.Models.Enums.NightClubStyle;
-import jakarta.persistence.*;
+import com.example.kharja.Entity.Enums.NightClubStyle;
 
-import java.util.List;
-import java.util.Set;
+import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("NightClub")

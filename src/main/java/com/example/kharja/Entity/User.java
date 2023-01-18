@@ -1,8 +1,7 @@
-package com.example.kharjabackend.Models;
-
-import jakarta.persistence.*;
+package com.example.kharja.Entity;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 

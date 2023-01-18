@@ -1,9 +1,10 @@
-package com.example.kharjabackend.Models;
+package com.example.kharja.Entity;
 
-import com.example.kharjabackend.Models.Enums.Location;
-import jakarta.persistence.*;
+
+import com.example.kharja.Entity.Enums.Location;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 

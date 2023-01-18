@@ -1,9 +1,8 @@
-package com.example.kharjabackend.Models;
-
-import com.example.kharjabackend.Models.Enums.RatingCriteria;
-import jakarta.persistence.*;
+package com.example.kharja.Entity;
+import com.example.kharja.Entity.Enums.RatingCriteria;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity

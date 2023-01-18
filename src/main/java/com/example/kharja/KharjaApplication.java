@@ -1,15 +1,14 @@
 package com.example.kharja;
 
-import com.example.kharja.Entity.Domain;
-import com.example.kharja.Entity.Etudiant;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KaddemApplication {
+public class KharjaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KaddemApplication.class, args);
+        SpringApplication.run(KharjaApplication.class, args);
     }
 
 }

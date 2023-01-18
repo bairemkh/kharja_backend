@@ -1,7 +1,8 @@
-package com.example.kharjabackend.Models;
+package com.example.kharja.Entity;
 
-import com.example.kharjabackend.Models.Enums.CoffeeShopStyle;
-import jakarta.persistence.*;
+import com.example.kharja.Entity.Enums.CoffeeShopStyle;
+
+import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("Restaurant")

@@ -1,9 +1,12 @@
-package com.example.kharjabackend.Models;
+package com.example.kharja.Entity;
 
-import com.example.kharjabackend.Models.Enums.CoffeeShopStyle;
-import jakarta.persistence.*;
+import com.example.kharja.Entity.Enums.CoffeeShopStyle;
+import lombok.Data;
+
+import javax.persistence.*;
 
 @Entity
+@Data
 @DiscriminatorValue("CoffeeShop")
 public class CoffeeShop extends Place{
     @Enumerated(EnumType.STRING)
