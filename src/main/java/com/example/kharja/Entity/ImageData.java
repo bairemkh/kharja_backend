@@ -1,23 +1,30 @@
 package com.example.kharja.Entity;
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
 
-import javax.persistence.*;
+import lombok.*;
+import org.hibernate.Hibernate;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "image_data")
-@Data
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
 public class ImageData implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    int id;
+    String id;
     String path;
     String name;
+
+    public ImageData(String id,String path, String name) {
+        this.path = path;
+        this.name = name;
+        this.id = id;
+    }
+
 }
