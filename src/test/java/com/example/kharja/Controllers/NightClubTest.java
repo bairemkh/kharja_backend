@@ -44,4 +44,20 @@ public class NightClubTest {
         assertNotNull(responseEntity);
         assertEquals(ResponseEntity.accepted().body(nightClub), responseEntity);
     }
+
+    @Test
+    public void testGetNightClubs() {
+        NightClub nightClub = new NightClub();
+        NightClub nightClub1 = new NightClub();
+        nightClub.setName("Test Night Club 1");
+        nightClub.setAlcohol(true);
+        nightClub1.setName("Test Night Club 2");
+        when(nightClubService.add(any(NightClub.class))).thenReturn(nightClub);
+        ResponseEntity<Object> responseEntity = nightClubController.addNightClub(nightClub);
+        verify(nightClubService, times(1)).add(nightClub);
+        assertNotNull(responseEntity);
+        System.out.println(responseEntity);
+        System.out.println("______________________________________________________________");
+        assertEquals(ResponseEntity.accepted().body(nightClub), responseEntity);
+    }
 }

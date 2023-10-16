@@ -30,6 +30,9 @@ public class NightClubService implements IService<NightClub>{
     public NightClub retrieve(int id) {
         return repository.findById(id).get();
     }
+    public List<NightClub> retrieveAll(int id) {
+        return repository.findAll();
+    }
 
     @Override
     public void remove(int id) {

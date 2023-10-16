@@ -33,4 +33,14 @@ public class NightClubController {
         }
 
     }
+
+    @PostMapping(value = "/getAll")
+    public ResponseEntity<Object> getAllNightClubs(){
+        try {
+            return ResponseEntity.accepted().body(service.retrieveAll());
+        }catch (Exception e){
+            return ResponseEntity.internalServerError().body(e);
+        }
+
+    }
 }
